@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="clearfix">
+<head>
+   <title>Blog - Yourstruly, HB</title>
+   <link rel="icon" href="images/favicon.png">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- Font awesome -->
+   <script src="https://kit.fontawesome.com/220d6b62fe.js" crossorigin="anonymous"></script>
+   
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Didact+Gothic&family=Fjalla+One&display=swap"
+      rel="stylesheet">
+</head>
+<body> 
+   <header>
+      <!-- Logo -->
+      <div class="logo">
+         <a href="#"><h1 class="logo-text">Yourstruly, HB</h1></a>
+         <i class="fas fa-bars menu-toggle"></i>
+      </div>
+      
+      <!-- Navigation bar -->
+      <ul class="nav">
+         <li><a href="#">About</a></li>
+         <li><a href="blog.html">Blog</a></li>
+         <li><a href="#">Contact</a></li>
+         <!--User Login-->
+         <li>
+            <a href="#">Log in
+               <i class="fas fa-chevron-down" style="font-size: 15px; margin: 2px;" id="dropdown-icon"></i>
+            </a>
+            <ul class="user-dropdown">
+               <li><a href="#">Dashboard</a></li>
+               <li><a href="#" class="logout">Logout</a></li>
+            </ul>
+         </li>
+      </ul>
+   </header>
+   <!-- Navigation bar -->
+
+   <!-- Search bar -->
+   <div class="wrapper-search-bar">
+      <div class="search-bar">
+         <input type="search" name="query" placeholder="Search blog title" class="search-term" id="search-box">
+         <button type="button" class="btn" id="search-button" onclick="return searchBlog()">
+            <i class="fa fa-search"></i>
+         </button>    
+      </div>
+      <p id="search-notifier"></span></p>
+   </div>
+   <!-- Search bar -->
+
+   <!-- Dropdown -->
+   <div class="wrapper-topics-dropdown">
+      <div class="dropdownbox">
+         <p>Search by topic</p>
+      </div>
+      <ul class="menu">
+         <li>Code</li>
+         <li>Interest</li>
+         <li>Reviews</li>
+         <li>Learned</li>
+      </ul>
+   </div>
+
+   <!-- Content -->
+   <div class="content clearfix">
+      <!-- Main Content-->
+      <div class="main-content">
+         <h1 class="recent-post-title" id="current-blogs">Recent blogs</h1>      
+         <!-- Blog Post 1-->
+         <div class="blog-post ">
+            <div class="blog-image-holder">
+               <img src="images/pexels-pixabay-33101.jpg" alt="" class="post-image">
+            </div>
+
+            <div class="blog-title">
+               <h2><a href="single.html">Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+               aliqua</a></h2>
+            </div>
+
+            <div class="blog-metadata">
+               <i class="far fa-user"></i>
+               &nbsp;
+               <span class="author">Hannah Bella</span>
+               &nbsp; &nbsp; &nbsp;
+               <i class="far fa-calendar-alt"></i>
+               &nbsp;
+               <span class="publish-date">May 12, 2021</span>
+            </div>
+            
+            <div class="blog-preview">
+               <p class="preview-text">Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+               aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+               occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <a href="single.html" class="btn" id="read-more-btn">Read more</a>
+         </div>
+
+         <!-- Blog Post 2 -->
+         <div class="blog-post">
+            <div class="blog-image-holder clearfix">
+               <img src="images/pexels-pixabay-33101.jpg" alt="" class="post-image">
+            </div>
+         
+            <div class="blog-title">
+               <h2><a href="single.html">Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor
+                     incididunt ut labore et dolore magna
+                     aliqua</a></h2>
+            </div>
+         
+            <div class="blog-metadata">
+               <i class="far fa-user"></i>
+               &nbsp;
+               <span class="author">Hannah Bella</span>
+               &nbsp; &nbsp; &nbsp;
+               <i class="far fa-calendar-alt"></i>
+               &nbsp;
+               <span class="publish-date">May 12, 2021</span>
+         
+            </div>
+         
+            <div class="blog-preview">
+               <p class="preview-text">Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+               aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+               occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+         
+            <a href="single.html" class="btn" id="read-more-btn">Read more</a>
+         </div>
+
+         <!-- Blog Post 3 -->
+         <div class="blog-post">
+            <div class="blog-image-holder clearfix">
+               <img src="images/pexels-pixabay-33101.jpg" alt="" class="post-image">
+            </div>
+         
+            <div class="blog-title">
+               <h2><a href="single.html">Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor
+                     incididunt ut labore et dolore magna
+                     aliqua</a></h2>
+            </div>
+         
+            <div class="blog-metadata">
+               <i class="far fa-user"></i>
+               &nbsp;
+               <span class="author">Hannah Bella</span>
+               &nbsp; &nbsp; &nbsp;
+               <i class="far fa-calendar-alt"></i>
+               &nbsp;
+               <span class="publish-date">May 12, 2021</span>
+         
+            </div>
+         
+            <div class="blog-preview">
+               <p class="preview-text">Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+               aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+               occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+         
+            <a href="single.html" class="btn"id="read-more-btn">Read more</a>
+         </div>
+
+      </div>
+   </div>
+   <!-- Content -->
+   
+   <!-- Footer -->
+   <footer>
+      <div class="footer-content">
+         <!-- About -->
+         <div class="about">
+            <h1 class="logo-text">Yourstruly, HB</h1>
+            <p><strong>Yourstruly, HB</strong> is a website designed by Hannah Bella C. Arceño for an academic project.</p>
+            <div class="contact">
+               <i class="fas fa-phone"></i> &nbsp; +639 163 010 790<br>
+               <i class="fas fa-envelope"></i> &nbsp; yourstrulyhb@gmail.com</span>
+            </div>
+            <div class="socials">
+               <a href="#"><i class="fab fa-facebook"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+         </div>
+   
+         <!-- Quick Links -->
+         <div class="links">
+            <h2>Site Pages</h2>
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>        
+         </div>
+
+         <!-- Contact Form -->
+         <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form name="contactForm" action="#" onsubmit="return validateContactForm()">
+               <div>
+                  <input type="text" name="name" class="text-input" id="sender-name" placeholder="Name">
+                  <input type="email" name="email" class="text-input" id="sender-email" required placeholder="E-mail address">
+
+                  <button type="submit" class="btn" id="submit-contact-form">
+                     <i class="fas fa-envelope"></i>
+                     Send
+                  </button>
+               </div>
+
+               <textarea rows="7" name="message" class=" text-input" id="sender-message" required placeholder="Message"></textarea>           
+            </form>
+         </div>
+      </div>
+   
+      <div class="footer-bottom">
+         &copy; 2021 yourstrulyhb.com | designed by Hannah Bella C. Arceño
+      </div>
+   </footer>
+   <!-- Footer -->
+
+   <!-- JQuery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"></script>
+
+   <!-- Custom JS -->
+   <script src="js/scripts.js"></script>
+
+</body>
+</html>
